@@ -53,6 +53,10 @@ public class Calc2 extends HttpServlet {
             resp.addCookie(operator);
 //            servletContext.setAttribute("value", value);
 //            servletContext.setAttribute("operator", op);
+
+            resp.sendRedirect("calc2.html");
+//            resp.setHeader("Location","calc2.html");
+//            resp.setStatus(302);
         }
     }
 }
